@@ -1,0 +1,53 @@
+<div id='searchBar1'>
+    <form action='/Movies' method='get'>
+        <input type='hidden' name='replyFormat' value='html'>
+        <table>
+            <tr>
+                <td colspan="2">
+                    Search by Movie Name: <input type='text' name='titleSearchExpression' /><input type='submit' value='SEARCH'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset id='filters'>
+                        <table>
+                            <tr>
+                                <legend>Add some filters: </legend>
+                                    <td>
+                                        By Rating:<br>
+
+                                        1 <input type='radio' name='rating' value='1'>
+                                        2 <input type='radio' name='rating' value='2'>
+                                        3 <input type='radio' name='rating' value='3'>
+                                        4 <input type='radio' name='rating' value='4'>
+                                        5 <input type='radio' name='rating' value='5'>
+                                    </td>
+                                    <td>
+                                        By Category:<br>
+                                        <select name='categoryId'>
+                                            <option value=1>Drama</option>
+                                            <option value=2>Horror</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<!--
+<td colspan="2">
+
+    <p> Show Actors with results <input type='checkbox' name='showActors'>
+    </p>
+</td>
+
+* A list of movies
+  * The user should be able to search the movies by title
+  * The user should be able to filter the movies by rating
+  * The user should be able to filter the movies by category
+* Movie details for each movie
+* A list of actors in a movie
+-->

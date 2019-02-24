@@ -1,0 +1,16 @@
+<p>
+    <?php
+        //requests:  Show list of movies or details on one movie
+    ?>
+    <?php
+    if (isset($movieTitle)) {
+        //Showing one movie
+        include('viewMovie.phtml');
+
+    }
+    else{
+        //Requesting list
+        echo 'listing movies';
+    }
+    ?>
+</p>
